@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hello</title>
+
+<style>
+	html{
+    	height: 100%; /* Ensure both html and body have 100% height */
+    	
+
+	}
+
+	body {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 90%;
+	    border: 1px solid red;
+	    padding: 20px;
+	    flex-wrap: wrap;
+	}
+
+	#id{
+		color: yellow;
+	}
+
+	.box{
+		position: absolute;
+		border: 1px solid green;
+		height: 100px;
+		width: 100px;
+	}
+
+	.box:nth-child(1){
+		display: flex;
+		align-self: flex-end;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.box:nth-child(1){
+		animation: example 1s ease forwards;
+	}
+
+	@keyframes example {
+		to{transform: translateY(100px);}
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="box"><div class="text">aaa</div></div>
+<div class="box"></div>
+<div class="box"></div>
+<div class="box"></div>
+
+</body>
+</html>
